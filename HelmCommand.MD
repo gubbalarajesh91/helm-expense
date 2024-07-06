@@ -3,3 +3,4 @@ helm install <preffered-name> . ---> current directory
 cd helm
 helm install nginx .
 helm uninstall nginx
+helm list
