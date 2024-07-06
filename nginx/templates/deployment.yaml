@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+    purpose: helm
+    
+spec:
+  replicas: {{ .Values.deployment.replicas}}
+  selector:
+    matchLabels:
+      app: nginx
+      purpose: helm
+#pod defination    
+  template:
+    metadata:
+      labels:
+        app: nginx
+        purpose: helm
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:{{ .Values.deployment.imageVersion }}
+      
