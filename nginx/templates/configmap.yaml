@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: frontend
-  namespace: expense
+#  namespace: expense #to create default namespace
 data:
   nginx.conf: |
     user www-data;
