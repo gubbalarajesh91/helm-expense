@@ -4,3 +4,4 @@ cd helm
 helm install nginx .
 helm uninstall nginx
 helm list
+helm upgrade nginx .
