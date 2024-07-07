@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: mysql
+  namespace: expense
+spec:
+  selector:
+    component: mysql
+    project: expense
+    tier: db
+  ports:
+  - protocol: TCPe
+    port: 3306 # service port lik load balancer
+    targetPort: 3306 #nginx port
