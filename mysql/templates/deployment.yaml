@@ -63,3 +63,5 @@ spec:
 #sudo git clone https://github.com/ahmetb/kubectx /opt/kubectx
 #sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens
 #kubens <namespace name>
+#helm install mysql .
+#
